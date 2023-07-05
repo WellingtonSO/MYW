@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+  <script>
+    function toggleDataNascimento() {
+      var dataNascimentoInput = document.getElementById("data_nascimento");
+      var pessoaFisicaRadio = document.getElementById("pessoa_fisica");
+  
+      dataNascimentoInput.disabled = !pessoaFisicaRadio.checked;
+    }
+  
+    function validarFormulario() {
+      var nomeInput = document.getElementById("nome");
+      var tipoPessoaInput = document.querySelector('input[name="tipo_pessoa"]:checked');
+      var dataNascimentoInput = document.getElementById("data_nascimento");
+      var telefoneInput = document.getElementById("telefone");
+      var senhaInput = document.getElementById("senha");
+      var confirmarSenhaInput = document.getElementById("confirmar_senha");
+  
+      if (
+        nomeInput.value === "" ||
+        !tipoPessoaInput ||
+        (tipoPessoaInput.value === "Pessoa Física" && dataNascimentoInput.value === "") ||
+        telefoneInput.value === "" ||
+        senhaInput.value === "" ||
+        confirmarSenhaInput.value === "" ||
+        senhaInput.value !== confirmarSenhaInput.value
+      ) {
+        alert("Por favor, preencha todos os campos obrigatórios corretamente.");
+        return false;
+      }
+  
+      return true;
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="descartes.html">Descartes</a></li>
+      <li><a href="dicas.html">Dicas</a></li>
+      <li class="entrar"><a href="login.html">Entrar</a></li>
+      <li id="userStatus" style="display: none;"></li>
+    </ul>
+  </nav>
+
+  
+  <nav class="cadastroM">
+    <form action="" method="POST">
+      <h2>Cadastro:</h2><br>
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" maxlength="100" required><br>
+
+      <label for="pessoa_fisica">Tipo de Pessoa:</label>
+      <input type="radio" id="pessoa_fisica" name="tipo_pessoa" value="Pessoa Física" onclick="toggleDataNascimento()" required> Pessoa Física 
+      <input type="radio" id="pessoa_juridica" name="tipo_pessoa" value="Pessoa Jurídica" onclick="toggleDataNascimento()" required> Pessoa Jurídica<br>
+
+      <label for="data_nascimento">Data de Nascimento:</label>
+      <input type="date" id="data_nascimento" name="data_nascimento" min="1950-01-01" disabled><br>
+
+      <label for="telefone">Telefone:</label>
+      <input type="text" id="telefone" name="telefone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required><br>
+
+      <label for="bairro">Bairro:</label>
+      <select id="bairro" name="bairro" required>
+        <option value="bairro1">Capão Raso</option>
+        <option value="bairro2">CIC</option>
+        <option value="bairro3">Novo Mundo</option>
+        <option value="bairro4">Portão</option>
+      </select><br>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br>
+
+      <label for="confirmar_senha">Confirme a Senha:</label>
+      <input type="password" id="confirmar_senha" name="confirmar_senha" required><br>
+
+      <input type="submit" value="Cadastrar">
+      <button type="button" onclick="window.location.href='login.html'">Cancelar</button>
+
+    </form>
+  </nav>
+
+</body>
+</html>

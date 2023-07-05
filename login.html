@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="descartes.html">Descartes</a></li>
+      <li><a href="dicas.html">Dicas</a></li>
+      <li class="entrar"><a href="login.html">Entrar</a></li>
+      <li id="userStatus" style="display: none;"></li>
+    </ul>
+  </nav>
+
+  <h2>Login</h2>
+
+  <form id="loginForm">
+    <div>
+      <label for="username">Nome de usuário:</label>
+      <input type="text" id="username" required>
+    </div>
+    <div>
+      <label for="password">Senha:</label>
+      <input type="password" id="password" required>
+    </div>
+    <button type="submit">Entrar</button>
+    <div><p><a href="cadastro.html" text-decoration="none">Faça seu cadastro aqui!</a></p></div>
+  </form>
+
+  <script>
+    const loginForm = document.getElementById('loginForm');
+
+    loginForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const usernameInput = loginForm.querySelector('#username');
+      const passwordInput = loginForm.querySelector('#password');
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+
+      // Verifique as credenciais do usuário (substitua esta lógica pelo seu próprio backend)
+      if (username === 'seu_usuario' && password === 'sua_senha') {
+        // Login bem-sucedido
+        const user = {
+          username: username,
+          loggedIn: true
+        };
+        // Armazene os dados do usuário no armazenamento local
+        localStorage.setItem('user', JSON.stringify(user));
+        // Redirecione para a página principal (index.html)
+        window.location.href = 'index.html';
+      } else {
+        alert('Nome de usuário ou senha inválidos. Por favor, tente novamente.');
+        // Limpe os campos de entrada
+        usernameInput.value = '';
+        passwordInput.value = '';
+      }
+    });
+  </script>
+</body>
+</html>

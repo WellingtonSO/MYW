@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Khula&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYW</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="descartes.html">Descartes</a></li>
+      <li><a href="dicas.html">Dicas</a>
+        <ul>
+          <li><a href="#" class="tag-filter" data-tag="madeira">Madeira</a></li>
+          <li><a href="#" class="tag-filter" data-tag="metal">Metal</a></li>
+          <li><a href="#" class="tag-filter" data-tag="papel">Papel</a></li>
+          <li><a href="#" class="tag-filter" data-tag="plastico">Plástico</a></li>
+        </ul>
+      </li>
+      <li class="entrar"><a href="login.html">Entrar</a></li>
+      <li id="userStatus" style="display: none;"></li>
+    </ul>
+  </nav>
+
+  <h2>Dicas:</h2><br>
+  <button id="btn-nova-dica">Nova Dica</button>
+  <div class="dicas-container">
+    <div class="dica" data-id="1" data-tags="madeira">
+      <h3>Prateleira de Parede Rústica</h3>
+      <p><b>Materiais necessários:</b><br>
+        - Peças de madeira de tamanhos variados (restos de madeira)<br>
+        - Lixa;<br>
+        - Serra;<br>
+        - Parafusos;<br>
+        - Furadeira;<br>
+        - Nível;<br>
+        - Trena;<br>
+        - Tinta ou verniz (opcional);<br>
+        - Pincel ou rolo (se optar por pintar ou envernizar);<br>
+        <b>Instruções:</b><br>
+        1 - Limpeza e preparação: Verifique se todas as peças de madeira estão limpas e livres de pregos ou outros objetos. Lixe as superfícies para remover quaisquer imperfeições.<br>
+        2 - Planejamento: Determine o tamanho e o layout da sua prateleira. Você pode escolher um design simétrico com peças de madeira do mesmo tamanho ou um design mais aleatório com peças de diferentes tamanhos. Lembre-se de levar em consideração o espaço disponível na parede.<br>      
+        3 - Corte as peças de madeira: Use a serra para cortar as peças de madeira no tamanho desejado. Se necessário, meça e marque os comprimentos antes de cortar.<br>
+        4 - Montagem: Posicione as peças de madeira na parede de acordo com o layout planejado. Use o nível para garantir que estejam niveladas e faça as marcações onde serão fixadas. Em seguida, faça os furos piloto com a furadeira e fixe as peças de madeira na parede com os parafusos.<br>        
+        5 - Acabamento (opcional): Se desejar, você pode pintar ou envernizar a prateleira para melhorar sua aparência e proteção. Escolha uma cor ou acabamento que combine com a decoração do ambiente. Certifique-se de seguir as instruções do produto escolhido e deixe secar completamente antes de colocar objetos na prateleira.<br>        
+        6 - Colocação dos objetos: Agora sua prateleira está pronta para ser usada! Organize livros, objetos decorativos, plantas ou o que preferir.</p>
+      <div class="avaliacao">
+        <div class="barra">
+          <div class="porcentagem" data-util="0" data-inutil="0"></div>
+        </div>
+        <button class="botao util">Útil</button>
+        <button class="botao inutil">Inútil</button>
+        <span class="contador">0% de votos úteis, 0% de votos inúteis</span>
+      </div>
+      <div class="comentario">
+        <textarea placeholder="Deixe seu comentário..." disabled></textarea>
+        <button class="btn-comentar" disabled>Comentar</button>
+      </div>
+    </div>
+
+    <div class="dica" data-id="2" data-tags="metal">
+      <h3>Porta-chaves de Metal</h3>
+      <p><b>Materiais necessários:</b><br>
+        - Sobras de metal (pode ser chapa, barra ou outro tipo de metal);<br>
+        - Esmerilhadeira ou serra para metal;<br>
+        - Furadeira;<br>
+        - Brocas para metal;<br>
+        - Alicate;<br>
+        - Tinta em spray (opcional);<br>
+        - Gancho ou argola para chaves;<br>
+        - Parafusos ou rebites;<br>
+        <b>Instruções:</b><br>
+        1 - Limpeza e preparação: Certifique-se de que as sobras de metal estejam limpas e livres de qualquer sujeira ou ferrugem. Caso necessário, utilize a esmerilhadeira ou uma serra para metal para cortar o metal em pedaços do tamanho desejado para o porta-chaves.<br>
+        2 - Planejamento: Decida o formato e o tamanho do seu porta-chaves. Você pode criar uma forma geométrica simples, como um retângulo ou um círculo, ou optar por um design mais criativo.<br>      
+        3 - Marcação e furação: Marque os pontos onde serão feitos os furos para fixar os ganchos ou argolas de chave. Utilize a furadeira com a broca apropriada para metal e faça os furos nos locais marcados.<br>
+        4 - Dobramento e modelagem: Use um alicate para dobrar ou modelar o metal, criando um suporte ou estrutura para os ganchos de chave. Isso pode envolver curvar o metal, criar dobras ou moldar de acordo com o seu design.<br>        
+        5 - Pintura (opcional): Se desejar, você pode pintar o metal com tinta em spray para obter um acabamento mais estético. Escolha uma cor que combine com a decoração ou preferência pessoal. Certifique-se de seguir as instruções do produto e deixe a tinta secar completamente.<br>        
+        6 - Fixação dos ganchos ou argolas: Insira os ganchos ou argolas para chaves nos furos feitos no metal. Fixe-os no lugar com parafusos ou rebites, garantindo que estejam bem presos.<br>
+        7 - Fixação na parede: Escolha um local na parede onde deseja fixar o porta-chaves. Utilize parafusos, buchas ou outros dispositivos de fixação adequados para prender o porta-chaves na parede de forma segura.</p>
+      <div class="avaliacao">
+        <div class="barra">
+          <div class="porcentagem" data-util="0" data-inutil="0"></div>
+        </div>
+        <button class="botao util">Útil</button>
+        <button class="botao inutil">Inútil</button>
+        <span class="contador">0% de votos úteis, 0% de votos inúteis</span>
+      </div>
+      <div class="comentario">
+        <textarea placeholder="Deixe seu comentário..." disabled></textarea>
+        <button class="btn-comentar" disabled>Comentar</button>
+      </div>
+    </div>
+
+    <div class="dica" data-id="3" data-tags="papel">
+      <h3>Origami - Caixa de Armazenamento</h3>
+      <p><b>Materiais necessários:</b><br>
+        - Papel resistente (como papel cartão, papel de scrapbooking ou papel dobradura);<br>
+        - Régua;<br>
+        - Lápis;<br>
+        - Tesoura;<br>
+        - Cola (opcional);<br>
+        - Decorações (como fitas, adesivos, canetas coloridas, etc. - opcionais);<br>
+        <b>Instruções:</b><br>
+        1 - Escolha o tamanho e tipo de papel: Selecione um papel resistente de sua escolha. O papel cartão é uma boa opção, mas você também pode experimentar com outros tipos de papel. Considere o tamanho da caixa que deseja criar e corte o papel em um quadrado ou retângulo proporcional.<br>
+        2 - Marcação e dobras: Usando uma régua e um lápis, marque as linhas onde as dobras serão feitas. Se estiver usando um quadrado, você pode marcar linhas no meio para dividir o papel em quatro partes iguais. Se estiver usando um retângulo, marque as linhas onde deseja que as dobras sejam feitas.<br>      
+        3 - Dobre as laterais: Dobre as laterais do papel em direção ao centro, seguindo as linhas marcadas. Faça vincos firmes para garantir que as dobras fiquem bem definidas.<br>
+        4 - Dobre as extremidades: Dobre as extremidades do papel em direção ao centro, seguindo as linhas marcadas. Essas dobras formarão a base da caixa.<br>        
+        5 - Dobre as abas: Dobre as abas resultantes das laterais e extremidades do papel para dentro, criando as bordas da caixa. Essas abas devem ser dobradas perpendicularmente às laterais e extremidades.<br>        
+        6 - Fixação (opcional): Se desejar, você pode aplicar um pouco de cola nas abas para fixar melhor a caixa. Isso tornará a estrutura mais resistente. Certifique-se de usar uma quantidade moderada de cola para evitar que o papel fique encharcado.<br>
+        7 - Decoração (opcional): Se quiser adicionar um toque pessoal à sua caixa, decore-a com fitas, adesivos, desenhos ou qualquer outro elemento decorativo de sua escolha. Solte sua criatividade e personalize a caixa conforme seus gostos.<br>
+        8 - Montagem da caixa: Depois que a cola estiver seca (se você tiver usado), dobre as abas para cima e encaixe-as nos lados da caixa para fechar e finalizar o projeto.</p>      
+        <div class="avaliacao">
+        <div class="barra">
+          <div class="porcentagem" data-util="0" data-inutil="0"></div>
+        </div>
+        <button class="botao util">Útil</button>
+        <button class="botao inutil">Inútil</button>
+        <span class="contador">0% de votos úteis, 0% de votos inúteis</span>
+      </div>
+      <div class="comentario">
+        <textarea placeholder="Deixe seu comentário..." disabled></textarea>
+        <button class="btn-comentar" disabled>Comentar</button>
+      </div>
+    </div>
+
+    <div class="dica" data-id="4" data-tags="plastico">
+      <h3>Porta-lápis de Plástico Reciclado</h3>
+      <p><b>Materiais necessários:</b><br>
+        - Garrafas plásticas vazias (como garrafas de refrigerante ou água);<br>
+        - Tesoura;<br>
+        - Caneta permanente;<br>
+        - Lixa (opcional);<br>
+        - Fita adesiva colorida (opcional);<br>
+        - Decorações adicionais (como adesivos, tintas acrílicas, glitter - opcionais);<br>
+        <b>Instruções:</b><br>
+        1 - Escolha a garrafa plástica: Selecione uma garrafa plástica vazia e limpa. Você pode usar garrafas de refrigerante, água ou outros recipientes plásticos que tenha disponível.<br>
+        2 - Marcação e corte: Usando uma caneta permanente, marque a altura desejada para o seu porta-lápis na garrafa plástica. Em seguida, corte a parte superior da garrafa ao longo da linha marcada, criando um recipiente aberto.<br>      
+        3 - Acabamento (opcional): Se desejar, você pode lixar as bordas do recipiente cortado para suavizá-las. Isso ajuda a evitar possíveis arranhões ou ferimentos ao manusear o porta-lápis.<br>
+        4 - Decoração (opcional): Agora é hora de soltar sua criatividade! Você pode decorar o porta-lápis com fita adesiva colorida ao redor das bordas, colar adesivos, pintar com tintas acrílicas ou adicionar qualquer outro tipo de decoração que preferir. Deixe sua personalidade brilhar!<br>        
+        5 - Uso: Seu porta-lápis de plástico reciclado está pronto para uso. Coloque-o em sua mesa de trabalho ou em qualquer lugar que precise de organização para canetas, lápis, marcadores ou outros itens de escritório.</p> 
+        <div class="avaliacao">
+        <div class="barra">
+          <div class="porcentagem" data-util="0" data-inutil="0"></div>
+        </div>
+        <button class="botao util">Útil</button>
+        <button class="botao inutil">Inútil</button>
+        <span class="contador">0% de votos úteis, 0% de votos inúteis</span>
+      </div>
+      <div class="comentario">
+        <textarea placeholder="Deixe seu comentário..." disabled></textarea>
+        <button class="btn-comentar" disabled>Comentar</button>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+  <script>
+    // Função para verificar se o usuário já votou em uma dica
+    function hasUserVoted(dicaId) {
+      const votedDicas = JSON.parse(localStorage.getItem('votedDicas')) || [];
+      return votedDicas.includes(dicaId);
+    }
+
+    // Função para atualizar o estado dos botões de votos
+    function updateVoteButtons(dicaId) {
+      const utilButton = document.querySelector(`.dica[data-id="${dicaId}"] .botao.util`);
+      const inutilButton = document.querySelector(`.dica[data-id="${dicaId}"] .botao.inutil`);
+
+      if (hasUserVoted(dicaId)) {
+        utilButton.disabled = true;
+        inutilButton.disabled = true;
+      } else {
+        utilButton.disabled = false;
+        inutilButton.disabled = false;
+      }
+    }
+
+    const tagFilters = document.querySelectorAll('.tag-filter');
+    const dicas = document.querySelectorAll('.dica');
+    const utilButtons = document.querySelectorAll('.botao.util');
+    const inutilButtons = document.querySelectorAll('.botao.inutil');
+    const utilBars = document.querySelectorAll('.porcentagem');
+    const utilCounters = document.querySelectorAll('.contador');
+
+    tagFilters.forEach(tagFilter => {
+      tagFilter.addEventListener('click', () => {
+        // Remove a classe ativo de todas as tags
+        tagFilters.forEach(tag => tag.classList.remove('ativo'));
+
+        // Adiciona a classe ativo à tag selecionada
+        tagFilter.classList.add('ativo');
+
+        // Obtém a tag selecionada
+        const selectedTag = tagFilter.dataset.tag;
+
+        // Exibe ou oculta as dicas com base na tag selecionada
+        dicas.forEach(dica => {
+          const dicaTags = dica.dataset.tags.split(' ');
+          if (dicaTags.includes(selectedTag)) {
+            dica.style.display = 'block';
+          } else {
+            dica.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    dicas.forEach((dica, index) => {
+      const dicaId = index + 1;
+
+      const utilButton = utilButtons[index];
+      const inutilButton = inutilButtons[index];
+
+      utilButton.addEventListener('click', () => {
+        if (!hasUserVoted(dicaId)) {
+          const utilBar = utilBars[index];
+          const utilCounter = utilCounters[index];
+
+          const utilVotes = parseInt(utilBar.dataset.util);
+          const inutilVotes = parseInt(utilBar.dataset.inutil);
+
+          utilBar.style.width = `${utilVotes + 1}px`;
+
+          const utilPercentage = ((utilVotes + 1) / (utilVotes + inutilVotes + 1)) * 100;
+          const inutilPercentage = ((inutilVotes) / (utilVotes + inutilVotes + 1)) * 100;
+
+          utilBar.dataset.util = utilVotes + 1;
+          utilBar.dataset.inutil = inutilVotes;
+
+          utilCounter.textContent = `${utilPercentage.toFixed(0)}% de votos úteis, ${inutilPercentage.toFixed(0)}% de votos inúteis`;
+
+          // Marca a dica como votada pelo usuário
+          const votedDicas = JSON.parse(localStorage.getItem('votedDicas')) || [];
+          votedDicas.push(dicaId);
+          localStorage.setItem('votedDicas', JSON.stringify(votedDicas));
+
+          // Atualiza o estado dos botões de votos
+          updateVoteButtons(dicaId);
+        }
+      });
+
+      inutilButton.addEventListener('click', () => {
+        if (!hasUserVoted(dicaId)) {
+          const utilBar = utilBars[index];
+          const utilCounter = utilCounters[index];
+
+          const utilVotes = parseInt(utilBar.dataset.util);
+          const inutilVotes = parseInt(utilBar.dataset.inutil);
+
+          utilBar.style.width = `${utilVotes}px`;
+
+          const utilPercentage = ((utilVotes) / (utilVotes + inutilVotes + 1)) * 100;
+          const inutilPercentage = ((inutilVotes + 1) / (utilVotes + inutilVotes + 1)) * 100;
+
+          utilBar.dataset.util = utilVotes;
+          utilBar.dataset.inutil = inutilVotes + 1;
+
+          utilCounter.textContent = `${utilPercentage.toFixed(0)}% de votos úteis, ${inutilPercentage.toFixed(0)}% de votos inúteis`;
+
+          // Marca a dica como votada pelo usuário
+          const votedDicas = JSON.parse(localStorage.getItem('votedDicas')) || [];
+          votedDicas.push(dicaId);
+          localStorage.setItem('votedDicas', JSON.stringify(votedDicas));
+
+          // Atualiza o estado dos botões de votos
+          updateVoteButtons(dicaId);
+        }
+      });
+
+      // Atualiza o estado dos botões de votos ao carregar a página
+      updateVoteButtons(dicaId);
+    });
+
+    // Verifica se o usuário está logado e habilita os campos de comentário
+    const loggedUser = JSON.parse(localStorage.getItem('loggedUser'));
+    const commentTextareas = document.querySelectorAll('.comentario textarea');
+    const commentButtons = document.querySelectorAll('.comentario button');
+
+    if (loggedUser) {
+      commentTextareas.forEach(textarea => {
+        textarea.disabled = false;
+      });
+
+      commentButtons.forEach(button => {
+        button.disabled = false;
+      });
+    }
+
+  </script>
+</body>
+</html>

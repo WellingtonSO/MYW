@@ -1,0 +1,305 @@
+:root {
+  --cor-fundo: #7fffd4;
+  --cor-hover: #dffff9;
+  --cor-entra: #bffff3;:root {
+  --cor-fundo: #7fffd4;
+  --cor-hover: #dffff9;
+  --cor-entra: #bffff3;
+  --cor-letra: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Khula', sans-serif;
+}
+
+.menu ul {
+  background-color: var(--cor-fundo);
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.menu ul li a {
+  color: var(--cor-letra);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: background .4s;
+  border-radius: 10px;
+}
+
+.menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+.entrar {
+  float: right;
+  background-color: var(--cor-entra);
+}
+
+/* Sub-menu */
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: all .4s;
+  background-color: var(--cor-fundo);
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul li {
+  display: block;
+}
+
+/* Conteúdo das páginas */
+.descartesM form,
+.loginM form,
+.cadastroM form,
+.container {
+  padding: 40px;
+  text-align: justify;
+}
+
+.descartesM form label,
+.loginM form label,
+.cadastroM form label {
+  display: inline;
+}
+
+/* Dicas */
+.dicas-container,
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dica,
+.container {
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.dica h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dica p {
+  margin-bottom: 20px;
+}
+
+.dica .avaliacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dica .avaliacao button {
+  margin: 0 5px;
+}
+
+.dica .comentario textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.dica .comentario .btn-comentar {
+  padding: 5px 10px;
+}
+
+.dica .avaliacao .barra {
+  height: 10px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dica .avaliacao .barra .porcentagem {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.dica .avaliacao .botao {
+  margin-right: 10px;
+}
+
+.dica .avaliacao .botao.util {
+  background-color: green;
+  color: white;
+}
+
+.dica .avaliacao .botao.inutil {
+  background-color: red;
+  color: white;
+}
+  --cor-letra: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Khula', sans-serif;
+}
+
+.menu ul {
+  background-color: var(--cor-fundo);
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  position: relative;
+}
+
+.menu ul li a {
+  color: var(--cor-letra);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  transition: background .4s;
+  border-radius: 10px;
+}
+
+.menu ul li a:hover {
+  background-color: var(--cor-hover);
+}
+
+.entrar {
+  float: right;
+  background-color: var(--cor-entra);
+}
+
+/* Sub-menu */
+.menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transition: all .4s;
+  background-color: var(--cor-fundo);
+}
+
+.menu ul li:hover > ul {
+  display: block;
+}
+
+.menu ul ul li {
+  display: block;
+}
+
+/* Conteúdo das páginas */
+.descartesM form,
+.loginM form,
+.cadastroM form,
+.container {
+  padding: 40px;
+  text-align: justify;
+}
+
+.descartesM form label,
+.loginM form label,
+.cadastroM form label {
+  display: inline;
+}
+
+/* Dicas */
+.dicas-container,
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dica,
+.container {
+  width: 300px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.dica h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dica p {
+  margin-bottom: 20px;
+}
+
+.dica .avaliacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dica .avaliacao button {
+  margin: 0 5px;
+}
+
+.dica .comentario textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.dica .comentario .btn-comentar {
+  padding: 5px 10px;
+}
+
+.dica .avaliacao .barra {
+  height: 10px;
+  background-color: lightgray;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dica .avaliacao .barra .porcentagem {
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.dica .avaliacao .botao {
+  margin-right: 10px;
+}
+
+.dica .avaliacao .botao.util {
+  background-color: green;
+  color: white;
+}
+
+.dica .avaliacao .botao.inutil {
+  background-color: red;
+  color: white;
+}

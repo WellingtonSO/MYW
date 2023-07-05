@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MYW</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="menu">
+    <ul>
+      <li><a href="descartes.html">Descartes</a></li>
+      <li><a href="dicas.html">Dicas</a></li>
+      <li class="entrar"><a href="login.html">Entrar</a></li>
+      <li id="userStatus" style="display: none;"></li>
+    </ul>
+  </nav>
+
+
+  <nav class="descartesM">
+    <form action="descartes.php" method="POST">
+      <h2 style="text-align:justify;">Descartes:</h2><br>
+
+      <?php if ($usuarioLogado) { ?>
+        <label for="tipo_pessoa">Tipo de Pessoa:</label>
+        <input type="radio" id="pessoa_fisica" name="tipo_pessoa" value="Pessoa Física" required> Pessoa Física
+        <input type="radio" id="pessoa_juridica" name="tipo_pessoa" value="Pessoa Jurídica" required> Pessoa Jurídica<br>
+
+        <label for="bairro">Bairro:</label>
+        <select id="bairro" name="bairro" required>
+          <option value="bairro1">Capão Raso</option>
+          <option value="bairro2">CIC</option>
+          <option value="bairro3">Novo Mundo</option>
+          <option value="bairro4">Portão</option>
+        </select><br>
+      <?php } ?>
+
+      <label for="t_residuo">Tipo de Resíduo:</label>
+      <select id="t_residuo" name="t_residuo">
+        <option value="madeira">Madeira</option>
+        <option value="metal">Metal</option>
+        <option value="papel">Papel</option>
+        <option value="pilha">Pilhas</option>
+        <option value="plastico">Plástico</option>
+      </select><br>
+
+      <label for="peso">Peso:</label>
+      <input type="number" id="peso" name="peso" min="0" max="99" step="1" required>
+      <span>Kg</span><br>
+
+      <input type="submit" value="Procurar">
+    </form>
+    <script>
+      const form = document.querySelector('form');
+    
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    
+        // Obtém os valores do formulário
+        const tipoPessoa = form.querySelector('input[name="tipo_pessoa"]:checked').value;
+        const bairro = form.querySelector('#bairro').value;
+        const tipoResiduo = form.querySelector('#t_residuo').value;
+        const peso = form.querySelector('#peso').value;
+    
+        // Constrói a URL da página de resultados com base nos valores do formulário
+        const url = `resultados.html?tipo_pessoa=${encodeURIComponent(tipoPessoa)}&bairro=${encodeURIComponent(bairro)}&tipo_residuo=${encodeURIComponent(tipoResiduo)}&peso=${encodeURIComponent(peso)}`;
+    
+        // Redireciona para a página de resultados
+        window.location.href = url;
+      });
+    </script>
+  </nav>
+
+</body>
+</html>
